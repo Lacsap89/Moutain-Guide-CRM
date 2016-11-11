@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Moutain_Guide_CRM.AddClient">
+  <StackLayout Padding="10,10,10,10" HorizontalOptions="Start">
+    <Label Text="Firstname"/>
+    <Entry x:Name="FirstnameLabel" />
+    <Label Text="Lastname" />
+    <Entry x:Name="LastnameLabel" />
+    <Label Text="Comment" />
+    <Entry x:Name="CommentLabel"/>
+    <Button x:Name="addClientBtn" Text="Add Client" WidthRequest="185" BorderWidth="1" />
+  </StackLayout>
+</ContentPage>
