@@ -10,5 +10,6 @@
     <Label Text="Comment" />
     <Entry x:Name="CommentLabel"/>
     <Button x:Name="addClientBtn" Text="Add Client" WidthRequest="185" BorderWidth="1" />
+    <Button x:Name="addClientVTigerBtn" Text="Add Client on VTiger" WidthRequest="185" BorderWidth="1" />
   </StackLayout>
 </ContentPage>
