@@ -12,7 +12,7 @@ namespace Moutain_Guide_CRM
     {
         public TestClientDB()
         {
-            InitializeComponent();
+            //InitializeComponent();
         }
     }
 }
