@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Android.Content;
+using LocalNotifications.Plugin.Abstractions;
 //Petit test
 namespace Moutain_Guide_CRM
 {
@@ -20,6 +21,8 @@ namespace Moutain_Guide_CRM
             addClientBtn.Clicked += AddClientBtn_Clicked;
 
             this.BindingContext = new Client();
+
+            
         }
 
         private void GetClientBtn_Clicked(object sender, EventArgs e)
