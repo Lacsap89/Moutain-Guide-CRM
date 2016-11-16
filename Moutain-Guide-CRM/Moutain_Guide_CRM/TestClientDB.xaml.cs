@@ -4,7 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 using Xamarin.Forms;
+using Moutain_Guide_CRM.Models;
+using System.Collections.ObjectModel;
+using Moutain_Guide_CRM.Data;
 
 namespace Moutain_Guide_CRM
 {
@@ -12,7 +16,18 @@ namespace Moutain_Guide_CRM
     {
         public TestClientDB()
         {
+            
             InitializeComponent();
+            List<Client> clientFromData = new ClientDatabase().GetAllClient().ToList<Client>(); 
+            ObservableCollection <Client> clients = new ObservableCollection<Client>();
+            
+
+            foreach(Client c in clientFromData)
+            {
+                clients.Add(c);
+            }
+            ClientList.ItemsSource = clients;
+
         }
     }
 }

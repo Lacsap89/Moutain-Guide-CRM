@@ -16,5 +16,10 @@ namespace Moutain_Guide_CRM.Models
         public string Comment { get; set; }
 
         public Client() { }
+
+        override public string ToString()
+        {
+            return Firstname + " " + Lastname;
+        }
     }
 }
