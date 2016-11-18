@@ -11,9 +11,9 @@ using LocalNotifications.Plugin.Abstractions;
 //Petit test
 namespace Moutain_Guide_CRM
 {
-    public partial class ViewClient:ContentPage
+    public partial class Home:ContentPage
     {
-        public ViewClient()
+        public Home()
         {
             InitializeComponent();
             this.Title = "Mountain Guide CRM";
@@ -25,16 +25,9 @@ namespace Moutain_Guide_CRM
             
         }
 
-        private void GetClientBtn_Clicked(object sender, EventArgs e)
+        private async void GetClientBtn_Clicked(object sender, EventArgs e)
         {
-            Client client = new Client();
-            client.Firstname = "Pascal";
-            client.Lastname = "Deleze";
-            client.Comment = "Test";
-            getClientBtn.Text = client.Firstname;
-            FirstnameLabel.Text = client.Firstname;
-            LastnameLabel.Text = client.Lastname;
-            CommentLabel.Text = client.Comment;
+            await Navigation.PushAsync(new ViewClientFromDB());
 
 
         }

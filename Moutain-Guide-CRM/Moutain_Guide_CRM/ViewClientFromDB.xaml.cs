@@ -12,17 +12,17 @@ using Moutain_Guide_CRM.Data;
 
 namespace Moutain_Guide_CRM
 {
-    public partial class TestClientDB : ContentPage
+    public partial class ViewClientFromDB : ContentPage
     {
-        public TestClientDB()
+        public ViewClientFromDB()
         {
             
             InitializeComponent();
             List<Client> clientFromData = new ClientDatabase().GetAllClient().ToList<Client>(); 
             ObservableCollection <Client> clients = new ObservableCollection<Client>();
-            
 
-            foreach(Client c in clientFromData)
+
+            foreach (Client c in clientFromData)
             {
                 clients.Add(c);
             }

@@ -11,8 +11,7 @@ namespace Moutain_Guide_CRM
     {
         public App()
         {
-            //Xamarin ! Je suis venu pour négocier !       Xamarin ! Je suis venu pour négocier.        Xamarin ! Je suis venu pour négocier...
-            MainPage = new NavigationPage(new TestClientDB());
+            MainPage = new NavigationPage(new Home());
         }
 
         protected override void OnStart()
