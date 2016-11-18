@@ -17,6 +17,13 @@ namespace Moutain_Guide_CRM.Models
 
         public Client() { }
 
+        public Client(string firstname, string lastname, string comment)
+        {
+            Firstname = firstname;
+            Lastname = lastname;
+            Comment = comment;
+        }
+
         override public string ToString()
         {
             return Firstname + " " + Lastname;
