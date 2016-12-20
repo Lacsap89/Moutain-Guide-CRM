@@ -19,6 +19,7 @@ namespace Moutain_Guide_CRM
             this.Title = "Mountain Guide CRM";
             getClientBtn.Clicked += GetClientBtn_Clicked;
             addClientBtn.Clicked += AddClientBtn_Clicked;
+            Calendar.Clicked += Calendar_Clicked;
 
             this.BindingContext = new Client();
 
@@ -28,6 +29,12 @@ namespace Moutain_Guide_CRM
         private async void GetClientBtn_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new ViewClientFromDB());
+
+
+        }
+        private async void Calendar_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Calendar());
 
 
         }
