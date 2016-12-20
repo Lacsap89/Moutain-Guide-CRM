@@ -1,4 +1,5 @@
-﻿using SQLite;
+﻿using Moutain_Guide_CRM.Models;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,6 +47,11 @@ namespace Moutain_Guide_CRM.Data
                     return database.Insert(client);
                 }
             }
+        }
+
+        public void DeleteAll()
+        {
+            database.DeleteAll<Client>();
         }
     }
 }
